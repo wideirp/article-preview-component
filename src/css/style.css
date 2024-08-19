@@ -208,4 +208,14 @@ body .card .content .author .author__share--menu[data-state=opened] {
     width: 20px;
     z-index: 1;
   }
+  body .card .content .author .author__share--menu:last-child::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: -8px;
+    left: calc(50% - 16px);
+    transform: rotate(45deg);
+    background-color: #48556A;
+  }
 }/*# sourceMappingURL=style.css.map */

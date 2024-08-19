@@ -180,6 +180,12 @@ body .card .content .author .author__share[data-state=active] {
 body .card .content .author .author__share[data-state=active] img {
   filter: brightness(100);
 }
+body .card .content .author .author__share:hover, body .card .content .author .author__share:active, body .card .content .author .author__share:focus {
+  background-color: #6E8098;
+}
+body .card .content .author .author__share:hover img, body .card .content .author .author__share:active img, body .card .content .author .author__share:focus img {
+  filter: brightness(100);
+}
 body .card .content .author .author__share--menu {
   font-size: 0.8rem;
   display: none;

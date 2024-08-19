@@ -104,11 +104,25 @@ body .card {
   margin: 4rem 1rem;
   max-width: 30rem;
 }
+@media (min-width: 48rem) {
+  body .card {
+    max-width: 45rem;
+    display: flex;
+  }
+}
 body .card figure {
   margin: 0;
 }
 body .card figure img {
   border-radius: 10px 10px 0 0;
+}
+@media (min-width: 48rem) {
+  body .card figure img {
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 body .card .content {
   padding: 2rem;
@@ -117,6 +131,11 @@ body .card .content .main-text {
   color: #48556A;
   font-size: 1.25rem;
   font-weight: 700;
+}
+@media (min-width: 48rem) {
+  body .card .content .main-text {
+    margin-top: 0;
+  }
 }
 body .card .content .subtext {
   color: #6E8098;

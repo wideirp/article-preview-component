@@ -130,6 +130,7 @@ body .card .content .text-wrapper {
 }
 body .card .content .text-wrapper .main-text {
   color: #48556A;
+  line-height: 1.3rem;
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -141,6 +142,7 @@ body .card .content .text-wrapper .main-text {
 body .card .content .text-wrapper .subtext {
   color: #6E8098;
   font-size: 0.8rem;
+  line-height: 1.1rem;
 }
 body .card .content .author {
   padding: 2rem;

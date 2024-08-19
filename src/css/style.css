@@ -180,6 +180,12 @@ body .card .content .author .author__share[data-state=active] {
 body .card .content .author .author__share[data-state=active] img {
   filter: brightness(100);
 }
+body .card .content .author .author__share[data-state=active]:hover, body .card .content .author .author__share[data-state=active]:active, body .card .content .author .author__share[data-state=active]:focus {
+  background-color: #CCC;
+}
+body .card .content .author .author__share[data-state=active]:hover img, body .card .content .author .author__share[data-state=active]:active img, body .card .content .author .author__share[data-state=active]:focus img {
+  filter: brightness(1);
+}
 body .card .content .author .author__share:hover, body .card .content .author .author__share:active, body .card .content .author .author__share:focus {
   background-color: #6E8098;
 }

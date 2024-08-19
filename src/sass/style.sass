@@ -61,12 +61,15 @@ body
             color: #6E8098
             font-weight: 500
         .author__share
-          width: 32px
           background-color: #eee
           border-radius: 50%
           padding: 10px
           margin-left: auto
           z-index: 1
+          &[data-state="active"]
+            background-color: #6E8098
+            img
+              filter: brightness(100)
         .author__share--menu
           font-size: 0.8rem
           display: none

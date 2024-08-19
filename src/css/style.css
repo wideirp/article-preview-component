@@ -168,12 +168,17 @@ body .card .content .author div .author__date {
   font-weight: 500;
 }
 body .card .content .author .author__share {
-  width: 32px;
   background-color: #eee;
   border-radius: 50%;
   padding: 10px;
   margin-left: auto;
   z-index: 1;
+}
+body .card .content .author .author__share[data-state=active] {
+  background-color: #6E8098;
+}
+body .card .content .author .author__share[data-state=active] img {
+  filter: brightness(100);
 }
 body .card .content .author .author__share--menu {
   font-size: 0.8rem;

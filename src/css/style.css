@@ -171,8 +171,8 @@ body .card .content .author .author__share {
   background-color: #eee;
   border-radius: 50%;
   padding: 10px;
-  justify-self: flex-end;
   margin-left: auto;
+  z-index: 1;
 }
 body .card .content .author .author__share--menu {
   font-size: 0.8rem;
@@ -192,7 +192,7 @@ body .card .content .author .author__share--menu span {
   color: #9DAEC2;
   letter-spacing: 0.25rem;
 }
-body .card .content .author .author__share--menu[data-state=open] {
+body .card .content .author .author__share--menu[data-state=opened] {
   display: flex;
 }
 @media (min-width: 48rem) {
@@ -207,18 +207,5 @@ body .card .content .author .author__share--menu[data-state=open] {
   body .card .content .author .author__share--menu div.img-wrapper {
     width: 20px;
     z-index: 1;
-  }
-  body .card .content .author .author__share--menu div.author__share {
-    display: none;
-  }
-  body .card .content .author .author__share--menu:last-child::after {
-    content: "";
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    bottom: -8px;
-    left: calc(50% - 16px);
-    transform: rotate(45deg);
-    background-color: #48556A;
   }
 }/*# sourceMappingURL=style.css.map */

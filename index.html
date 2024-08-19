@@ -12,6 +12,7 @@
     />
     <title>Frontend Mentor | Article preview component</title>
     <link rel="stylesheet" href="src/css/style.css" />
+    <script src="src/js/main.js" defer></script>
   </head>
   <body>
     <article class="[ card ]">
@@ -41,7 +42,7 @@
           <div class="author__share">
             <img src="src/images/icon-share.svg" alt="share" />
           </div>
-          <div class="author__share--menu" data-state="open">
+          <div class="author__share--menu" id="share-menu" data-state="closed">
             <span>SHARE</span>
             <div class="img-wrapper">
               <img src="src/images/icon-facebook.svg" alt="facebook" />
@@ -51,9 +52,6 @@
             </div>
             <div class="img-wrapper">
               <img src="src/images/icon-pinterest.svg" alt="pinterest" />
-            </div>
-            <div class="author__share">
-              <img src="src/images/icon-share.svg" alt="share" />
             </div>
           </div>
         </div>

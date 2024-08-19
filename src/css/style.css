@@ -204,7 +204,7 @@ body .card .content .author .author__share--menu[data-state=opened] {
     top: -50px;
     left: 283px;
   }
-  body .card .content .author .author__share--menu div.img-wrapper {
+  body .card .content .author .author__share--menu a {
     width: 20px;
     z-index: 1;
   }

@@ -124,27 +124,28 @@ body .card figure img {
        object-fit: cover;
   }
 }
-body .card .content {
-  padding: 2rem;
+body .card .content .text-wrapper {
+  margin: 2rem;
 }
-body .card .content .main-text {
+body .card .content .text-wrapper .main-text {
   color: #48556A;
   font-size: 1.25rem;
   font-weight: 700;
 }
 @media (min-width: 48rem) {
-  body .card .content .main-text {
+  body .card .content .text-wrapper .main-text {
     margin-top: 0;
   }
 }
-body .card .content .subtext {
+body .card .content .text-wrapper .subtext {
   color: #6E8098;
   font-size: 0.8rem;
 }
 body .card .content .author {
+  padding: 2rem;
   display: flex;
   align-items: center;
-  margin-top: 2rem;
+  position: relative;
 }
 body .card .content .author .author__img {
   width: 40px;
@@ -172,4 +173,52 @@ body .card .content .author .author__share {
   padding: 10px;
   justify-self: flex-end;
   margin-left: auto;
+}
+body .card .content .author .author__share--menu {
+  font-size: 0.8rem;
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: #48556A;
+  border-radius: 0 0 10px 10px;
+}
+body .card .content .author .author__share--menu span {
+  color: #9DAEC2;
+  letter-spacing: 0.25rem;
+}
+body .card .content .author .author__share--menu[data-state=open] {
+  display: flex;
+}
+@media (min-width: 48rem) {
+  body .card .content .author .author__share--menu {
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    top: -50px;
+    left: 283px;
+  }
+  body .card .content .author .author__share--menu div.img-wrapper {
+    width: 20px;
+    z-index: 1;
+  }
+  body .card .content .author .author__share--menu div.author__share {
+    display: none;
+  }
+  body .card .content .author .author__share--menu:last-child::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: -8px;
+    left: calc(50% - 16px);
+    transform: rotate(45deg);
+    background-color: #48556A;
+  }
 }/*# sourceMappingURL=style.css.map */
